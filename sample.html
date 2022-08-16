@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
- <link rel="stylesheet" href="https://ws.ega.or.th/cportal/sdk/css/v2/sun.min.css" />
+
+    <link rel="stylesheet" href="https://trial.dga.or.th/cportal/sdk/css/v2/sun.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;400;700&display=swap" rel="stylesheet">
@@ -16,29 +16,55 @@
     <title>Document</title>
     <style>
         body {
-            background-color: #F483AE;
+            background-color: #00756E;
         }
 
-        .button.is-success, .button.is-success:hover, .button.is-success:focus, .button.is-success:active {
-            background-color:#AD466D
+        .button.is-success,
+        .button.is-success:hover,
+        .button.is-success:focus,
+        .button.is-success:active {
+            background-color: #00756E
         }
 
-
-        .button.is-info, .button.is-info:hover, .button.is-info:focus, .button.is-info:active {
-            background-color:#DF6594
+        .has-text-success{
+            color: #00756E;
         }
-        
+
+        .timeline-content span {
+            font-size: 0.9em;
+            color: #00756E;
+        }
+
+        .marker {
+            border: 2px solid #ffffff;
+            background: #00756E;
+        }
     </style>
 </head>
 
 <body class="section">
     <div class="container">
+        <h3 class="title is-3 has-text-white">สวัสดีคุณทดสอบ นามสกุลดี</h3>
+        <h6 class="subtitle is-6 has-text-white	">ยินดีต้อนรับเข้าสู่ ศูนย์รับเรื่องราวร้องทุกข์ของรัฐบาล</h6>
+
         <div class="card">
+            <div class="p-4">
+                <div class="has-text-centered"><img src="https://placehold.jp/150x150.png" alt="logo" class="my-4">
+                </div>
+
+                <a class="button is-medium is-fullwidth is-success mb-2">Button A</a>
+                <a class="button is-medium is-fullwidth is-success mb-2">Button B</a>
+                <a class="button is-medium is-fullwidth is-success mb-2">Button C</a>
+                <a class="button is-medium is-fullwidth is-success ">Button D</a>
+            </div>
+        </div>
+
+        <div class="card mt-4">
             <header class="card-header">
                 <p class="card-header-title">
-                    สิทธิสุขภาพของท่าน
+                    Display
                 </p>
-            </header>            
+            </header>
             <hr class="ml-5 mr-5 mt-2 mb-2">
 
             <div class="card-content">
@@ -69,7 +95,7 @@
         <div class="card mt-4">
             <header class="card-header">
                 <p class="card-header-title">
-                    สิทธิสุขภาพของท่าน
+                    Control
                 </p>
             </header>
             <hr class="ml-5 mr-5 mt-2 mb-2">
@@ -88,7 +114,7 @@
                             <span>Textfield - is-success</span>
                         </label>
                     </div>
-                    
+
                     <div class="field">
                         <label class="input-outlined is-info">
                             <input placeholder=" " />
@@ -115,7 +141,7 @@
                         <div class="help is-danger">This email is invalid</div>
                     </div>
 
-                    
+
                     <div class="field">
                         <label class="input-outlined ">
                             <select>
@@ -136,9 +162,35 @@
                             <span>select - is-info</span>
                         </label>
                     </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
 
                     <div class="field">
                         <a class="button is-medium is-fullwidth is-success">xxx</a>
+                    </div>
+
+                    <div class="field">
+                        <a class="button is-medium is-fullwidth is-success " disabled>xxx</a>
                     </div>
 
                 </div>
@@ -148,7 +200,59 @@
         <div class="card mt-4">
             <header class="card-header">
                 <p class="card-header-title">
-                    สิทธิสุขภาพของท่าน
+                    Timeline
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="timeline">
+
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <span>15 ส.ค. 2565 14:56 น.</span>
+                                <h3>รับเรื่อง</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <span>15 ส.ค. 2565 14:56 น.</span>
+                                <h3>รับเรื่อง</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-right">
+                            <div class="marker"></div>
+                            <div class="timeline-content">
+                                <span>15 ส.ค. 2565 14:56 น.</span>
+                                <h3>รับเรื่อง</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Not found
                 </p>
             </header>
             <hr class="ml-5 mr-5 mt-2 mb-2">
@@ -156,15 +260,18 @@
                 <div class="content has-text-centered p-4">
                     <span class="icon has-text-warning">
                         <span class="material-icons-round is-size-1">search</span>
-                      </span>
-                      <h6 class="mb-2 pb-0">ไม่พบข้อมูลสวัสดิการชุมชน</h6>
-                      <span>กรุณาลองค้นหาใหม่อีกครั้ง</span>
-                       
+                    </span>
+                    <h6 class="mb-2 pb-0">ไม่พบข้อมูลสวัสดิการชุมชน</h6>
+                    <span>กรุณาลองค้นหาใหม่อีกครั้ง</span>
+
                 </div>
             </div>
         </div>
-    
+
     </div>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -172,12 +279,12 @@
         <div class="navbar-brand section container ">
             <a class="button is-medium is-fullwidth is-info m-2">Fixed Button</a>
             <a class="button is-medium is-fullwidth is-success m-2">Fixed Button</a>
-          
+
         </div>
-      </nav>
-  
-  
-  
+    </nav>
+
+
+
 
 </body>
 
