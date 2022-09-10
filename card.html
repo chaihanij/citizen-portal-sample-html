@@ -115,22 +115,33 @@
             font-weight: bold;
         }
 
-        .remark{
+        .remark {
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
             top: 400px;
+            width: 100%;
         }
 
         @media screen and (orientation:landscape) {
-            .remark{
+            .remark {
                 display: none;
             }
+
+
+            .driving-card {
+                top: 150px;
+            }
+
+            .remark {
+                top: 350px;
+            }
+
         }
 
         @media screen and (orientation:portrait) {
-            .remark{
-                display:block;
+            .remark {
+                display: block;
             }
         }
 
@@ -170,7 +181,7 @@
                 display: none;
             }
 
-            .driving-card .top-bar .card-type{
+            .driving-card .top-bar .card-type {
                 font-size: 0.6em;
                 padding-top: 8px;
             }
