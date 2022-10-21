@@ -19,12 +19,13 @@
             background-color: #00756E;
         }
 
-        .driving-card {
-            visibility: visible;
+        section {
+            min-height: 100vh;
+            padding: 15px;
         }
 
-
         .driving-card {
+            visibility: visible;
             padding: 15px 15px 10px 10px;
             width: 100%;
             max-width: 450px;
@@ -34,7 +35,7 @@
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
-            top: 200px;
+            margin-top: calc(50vh - 200px);
         }
 
         .driving-card .top-bar {
@@ -103,12 +104,12 @@
             font-weight: bold;
         }
 
-        .small .column.is-4{
+        .small .column.is-4 {
             line-height: 1.7;
 
         }
 
-        .small .column.is-8{
+        .small .column.is-8 {
             font-size: 80% !important;
         }
 
@@ -173,6 +174,10 @@
             .driving-card .top-bar .country {
                 display: none;
             }
+
+            section {
+            margin-top: 100px;
+        }
         }
 
 
@@ -226,9 +231,8 @@
 </head>
 
 <body>
-    <div class="section">
+    <section>
         <div class="container">
-
             <div class="driving-card ">
                 <div class="top-bar mb-1">
                     <div class="flag"></div>
@@ -237,11 +241,11 @@
                 </div>
                 <div class="round"></div>
                 <div class="issue-bar mb-1">
-                    <div class="columns is-gapless is-mobile mb-0" >
+                    <div class="columns is-gapless is-mobile mb-0">
                         <div class="column is-2">
                             ฉบับที่:
                         </div>
-                        <div class="column is-10" >
+                        <div class="column is-10">
                             12345678
                         </div>
                     </div>
@@ -302,7 +306,7 @@
                         </div>
                     </div>
 
-                    
+
 
                 </div>
 
@@ -311,13 +315,95 @@
                 </div>
 
             </div>
+        </div>
+    </section>
 
-            <div class="remark has-text-centered has-text-white">
-                ท่านสามารถปรับจอเป็นแนวนอน เพื่อดูภาพบัตรขนาดเต็มได้
+    <section>
+        <div class="container">
+            <div class="driving-card ">
+                <div class="top-bar mb-1">
+                    <div class="flag"></div>
+                    <div class="country">ประเทศไทย <br> Kingdom Of Thailand</div>
+                    <div class="card-type">ใบอนุญาตขับรถ Driving License</div>
+                </div>
+                <div class="round"></div>
+                <div class="issue-bar mb-1">
+                    <div class="columns is-gapless is-mobile mb-0">
+                        <div class="column is-2">
+                            ฉบับที่:
+                        </div>
+                        <div class="column is-10">
+                            12345678
+                        </div>
+                    </div>
+                    <div class="columns is-gapless is-mobile mb-0">
+                        <div class="column is-2">
+                            ชนิด:
+                        </div>
+                        <div class="column is-10">
+                            รถยนต์ส่วนบุคคล
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-bar mb-1">
+
+                    <div class="columns is-gapless is-mobile mb-0 small">
+                        <div class="column is-4 ">
+                            วันอนุญาต:
+                        </div>
+                        <div class="column is-8 ">
+                            1 ม.ค. 2560
+                        </div>
+                    </div>
+
+                    <div class="columns is-gapless is-mobile mb-0 small">
+                        <div class="column is-4">
+                            วันหมดอายุ:
+                        </div>
+                        <div class="column is-8">
+                            1 ม.ค. 2566
+                        </div>
+                    </div>
+
+                    <div class="columns is-gapless is-mobile mb-0">
+                        <div class="column is-4">
+                            ชื่อ:
+                        </div>
+                        <div class="column is-8">
+                            นาย ทดสอบ นามสกุลดี
+                        </div>
+                    </div>
+
+                    <div class="columns is-gapless is-mobile mb-0 small">
+                        <div class="column is-4">
+                            วันเกิด:
+                        </div>
+                        <div class="column is-8">
+                            23 มกราคม 2525
+                        </div>
+                    </div>
+
+
+                    <div class="columns is-gapless is-mobile mb-0 small">
+                        <div class="column is-4">
+                            เลขบัตรประชาชน:
+                        </div>
+                        <div class="column is-8">
+                            1 1014 01058 XX X
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="bottom-bar">
+                    นายทะเบียน กรุงเทพมหานคร
+                </div>
+
             </div>
         </div>
-    </div>
-
+    </section>
 
 
 
