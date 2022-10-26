@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Auto Reidrect to Complete Page Start -->
+
+<head>
+    <meta content="en-us" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <script type="text/javascript" src="https://uatktbfastpay.ktb.co.th/SIT/js/antiRefresh.js"></script>
+
+    <title>THAI QR PAYMENT draft</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://uatktbfastpay.ktb.co.th/SIT/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://uatktbfastpay.ktb.co.th/SIT/css/style_qr.css" rel="stylesheet">
+
+
+
+
+    <!-- 20220211 New QR Start -->
+    <!--
+	<script src="https://uatktbfastpay.ktb.co.th/SIT/js/qr/qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://uatktbfastpay.ktb.co.th/SIT/js/qr/jquery.min.js"></script>
+	<script src="https://uatktbfastpay.ktb.co.th/SIT/js/qr/jquery-ui.min.js"></script>
+	-->
+    <script src="https://uatktbfastpay.ktb.co.th/SIT/js/qr/qrcode.js"></script>
+    <script src="https://uatktbfastpay.ktb.co.th/SIT/js/qr/jquery.min.js"></script>
+    <!-- 20220211 New QR End -->
+
+
+    <script type="text/javascript">
+        var runTime = "";
+        $(document).ready(function () {
+            sendGenQr();
+        }); 
+
+
+            function sendGenQr() {
+const res_Qrs = "hello";
+                var qrcode = new QRCode(document.getElementById("qrCodePay"), {
+                                text: res_Qrs,
+                                width: 240,
+                                height: 240,
+                                colorDark: "#000000",
+                                colorLight: "#ffffff",
+                                correctLevel: QRCode.CorrectLevel.L
+                            });
+            }
+
+    </script>
+    <style type="text/css">
+        #overlay_image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+            padding-left: 10px;
+            "
+ padding-right: 10px;
+            "
+
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+<!--  <style type="text/css">
+		body{
+  		padding-top: 40px;
+ 	 	padding-bottom: 40px;
+ 	 	/*background-color: rgb(79, 42, 129);*/
+ 	 	background-color: #eee;
+ 	 	}
+		
+	</style>-->
+
+<body  data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+    <!-- Auto Reidrect to Complete Page End -->
+    <form name="payPromptPay" method="post" action="payComp.jsp">
+        <input type="hidden" name="masterMerId" value="1">
+        <input type="hidden" name="merchantId" value="3521">
+        <input type="hidden" name="processType" value="View">
+        <input type="hidden" name="oId" value="1756134">
+        <input type="hidden" name="successUrl"
+            value="https://trial.dga.or.th/e-payment/ktb/qr/success?Ref=6600000154&amp;Ref1=62025468&amp;Ref2=&amp;Ref3=&amp;Ref4=&amp;Ref5=">
+        <input type="hidden" name="failUrl"
+            value="https://trial.dga.or.th/e-payment/ktb/qr/fail?Ref=6600000154&amp;Ref1=62025468&amp;Ref2=&amp;Ref3=&amp;Ref4=&amp;Ref5=">
+        <input type="hidden" name="cancelUrl"
+            value="https://trial.dga.or.th/e-payment/ktb/qr/cancel?Ref=6600000154&amp;Ref1=62025468&amp;Ref2=&amp;Ref3=&amp;Ref4=&amp;Ref5=">
+        <input type="hidden" name="remark" value="">
+        <input type="hidden" name="amount" value="1.0">
+        <input type="hidden" name="currCode" value="764">
+        <input type="hidden" name="print" value="">
+        <input type="hidden" name="sessionId" value="462663">
+        <input type="hidden" name="lang" value="T">
+        <input type="hidden" name="redirect" value="-1">
+        <input type="hidden" name="payType" value="N">
+        <input type="hidden" name="pMethod" value="PROMPTPAY">
+        <input type="hidden" name="templateId" value="0">
+        <input type="hidden" name="historyGo" value="-2">
+
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div style="max-width:480px; background-color:#FFFFFF;" class="m-auto borderblack">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="embed-responsive text-center header">
+
+                                <img class="img-responsive m-auto text-center" alt="" height="100"
+                                    src="https://uatktbfastpay.ktb.co.th/SIT/images/Thai_QR_Payment_Logo.png" style="">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12">
+                            <div class="embed-responsive text-center">
+                                <img class="img-responsive m-auto text-center promptpaylogo" alt="" height="auto"
+                                    src="https://uatktbfastpay.ktb.co.th/SIT/images/PromptPay-logo.png">
+                                <div class="ref text-center p-2">
+                                    <div style="text-align:justify;width:310px; margin:auto;">
+                                        TID: 00006102229820220734
+                                        <br>
+                                        TRACE : 1756134
+                                        <br>
+                                        BILLER ID : 099400016258820
+                                        <br>
+                                        REF1 : 6600000154
+                                        <br>
+                                        REF2 : 62025468
+                                        <br>
+                                        DATE : 2022/10/25 20:22:07
+                                    </div>
+                                </div>
+                                <!--
+				<div class="col-12">
+				
+				<img class="img-responsive m-auto text-center" alt="" height="auto" src="SIT/images/PROMPTPAYQR/" style="width:inherit; max-width:310px;">
+				
+				</div>
+				-->
+                                <!--
+				<div class="col-12" id="qrCodePay"  align="center"></div>
+				-->
+                                <div class="col-12" align="center">
+                                    <div id="container">
+                                        <div id="qrCodePay"
+                                            title="00020101021130650016A000000677010112011509940001625882002106600000154030862025468530376454041.005802TH5924Bhumibol Adulyadej Hosp.62240720000061022298202207346304EC00">
+                                          </div>
+                                        <div id="overlay_image"> <img class="img-responsive"
+                                                src="https://uatktbfastpay.ktb.co.th/SIT/images/PromptPay_QRLogo.png"
+                                                width="50px" height="50px"></div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12" style="text-align:center;">
+                                    <!--
+				<span class="THNAME"><strong></strong></span><br>
+        		<span class="ENNAME"></span>
+				-->
+                                    <pre>				<div id="BillerName">Bhumibol Adulyadej Hosp.</div>
+				</pre>
+
+                                </div>
+                            </div>
+
+                            <div class="row p-3">
+                                <div class="col-6">
+                                    <div class="text-left" style=" vertical-align:top;">
+                                        <span class="ENNAME2"><strong>AMT THB</strong></span><br>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-right" style="">
+                                        <span class="PRICE"><strong>1.00</strong></span><br>
+                                        <span class="CURRENCY">บาท (BAHT)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+                        <div class="row">
+                            <div class="col-6" style="height:auto; padding-left:30px;">
+
+                                <img class="img-responsive" alt="KTB"
+                                    src="https://uatktbfastpay.ktb.co.th/SIT/images/KTB_logo_blue.png" width="auto">
+                            </div>
+                            <div class="col-6" style=" text-align:justify; padding-left:0px;">
+
+                                <img class="img-responsive" alt="footer"
+                                    src="https://uatktbfastpay.ktb.co.th/SIT/images/footer.png" width="222" height="61">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
