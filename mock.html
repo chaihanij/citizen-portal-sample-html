@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <!-- 2 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการการชำระเงิน โดยบริษัทกรุงไทยแบงค์</title>
+    <link rel="icon" href="https://uatktbfastpay.ktb.co.th/static/images/favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://uatktbfastpay.ktb.co.th/static/css/default/font.css"
+        media="screen">
+    <link rel="stylesheet" type="text/css" href="https://uatktbfastpay.ktb.co.th/static/css/default/style.css"
+        media="screen">
+
+
+
+    <script language="javascript">
+        function LockBackButton() {
+            //script lock back button
+            window.location.hash = "no-back-button";
+            window.location.hash = "Again-No-back-button";//again because google chrome don't insert first hash into history
+            window.onhashchange = function () { window.location.hash = "no-back-button"; }
+        }
+    </script>
+</head>
+
+<body onload="LockBackButton();" data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+    <div class="container paycomp">
+        <div class="container-holder">
+
+            <div class="paycomp-title">
+                <div></div>
+
+                <div>การชำระเงินของคุณเสร็จสมบูรณ์</div>
+            </div>
+            <div class="paycomp-info">
+                <div>
+                    <div class="title">ชื่อร้านค้า :</div>
+                    <div>Bhumibol Adulyadej Hosp.</div>
+                </div>
+
+                <!-- start new 20201120 -->
+                <div>
+                    <div class="title">
+                        ราคารวม :
+                    </div>
+                    <div>
+                        THB 1.00
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- end new 20201120 -->
+
+
+                <!--  20181217 SurCharge Start -->
+
+                <!--  20181217 SurCharge End  -->
+
+                <div>
+                    <div class="title">วิธีการชำระเงิน :</div>
+                    <div>JCB</div>
+                </div>
+                <div>
+                    <div class="title"></div>
+                    <div>
+                        (J/Secure)
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="title">หมายเลขบัตร :</div>
+                    <div>**** - **** - **** - 9557</div>
+                </div>
+
+
+
+
+                <div>
+                    <div class="title">วันหมดอายุบัตร (เดือน/ปี) :</div>
+                    <div>**/ ****</div>
+                </div>
+                <div>
+                    <div class="title">ชื่อผู้ถือบัตร :</div>
+                    <div>Somchai Jaisaard</div>
+                </div>
+
+                <div class="paycomp-references-group">
+                    <div class="collapsible">
+                        <div class="title">เลขที่อ้างอิงร้านค้า (Merchant Ref.No.):</div>
+                        <div>6600000034</div>
+                    </div>
+                    <div class="paycomp-references-more" style="display: none !important;">
+
+                        <div>
+                            <div class="title">เลขที่อ้างอิงร้านค้า (Merchant Ref.No.1):</div>
+                            <div>62025468</div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 20210504 OrderRef Start -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 20210504 OrderRef End -->
+                    </div>
+                </div>
+
+                <div>
+                    <div class="title">เลขที่อ้างอิงการชำระเงิน :</div>
+                    <div>000001757983</div>
+                </div>
+
+                <!-- //20181217 SurCharge Start  -->
+
+                <!-- //20181217 SurCharge End  -->
+
+                <div class="paycomp-text-center">
+                    <div></div>
+                </div>
+                <div class="paycomp-text-center">
+                    <div>กรณีสมาชิกบัตรมีข้อสงสัย หรือร้องเรียนเกี่ยวกับสินค้า/บริการที่ได้รับ </div>
+                </div>
+                <div class="paycomp-text-center">
+                    <div>กรุณาติดต่อโดยตรงกับร้านค้าที่ท่านได้ทำรายการ</div>
+                </div>
+
+
+            </div>
+
+            <div class="footer inner">
+                <div class="btn-primary confirm"
+                    onclick="location.href='https://trial.dga.or.th/e-payment/ktb/fastpay/success?Ref=6600000034'">
+                    Confirm</div>
+
+
+
+                <div class="btn-primary print" onclick="">Print</div>
+            </div>
+            <div class="paycomp-text-center">
+                <div>
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer outer">
+        <div class="copyright"><img alt="LOGO" src="https://uatktbfastpay.ktb.co.th/static/images/favicon.webp"> © 2018
+            Krungthai Bank. ALL RIGHT RESERVED</div>
+    </div>
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display !== "block") {
+                    content.style.display = "block";
+                } else {
+                    content.style.setProperty("display", "none", "important");
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
