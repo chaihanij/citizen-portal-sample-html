@@ -1,0 +1,204 @@
+<html lang="en">
+
+<head>
+    <!-- 3 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการการชำระเงิน โดยบริษัทกรุงไทยแบงค์</title>
+    <link rel="icon" href="https://uatktbfastpay.ktb.co.th/static/images/favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://uatktbfastpay.ktb.co.th/static/css/default/font.css"
+        media="screen">
+    <link rel="stylesheet" type="text/css" href="https://uatktbfastpay.ktb.co.th/static/css/default/style.css"
+        media="screen">
+
+    <script type="text/javascript" src="https://uatktbfastpay.ktb.co.th/static/js/common.js"></script>
+    <script type="text/javascript" src="https://uatktbfastpay.ktb.co.th/SIT/js/antiRefresh.js"></script>
+
+    <script language="javascript">
+        function LockBackButton() {
+            //script lock back button
+            window.location.hash = "no-back-button";
+            window.location.hash = "Again-No-back-button";//again because google chrome don't insert first hash into history
+            window.onhashchange = function () { window.location.hash = "no-back-button"; }
+        }
+    </script>
+</head>
+
+<body onload="LockBackButton();" data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+    <div class="container payerror">
+        <div class="container-holder">
+            <form name="failForm" id="failForm" method="post" action="payForm2.jsp">
+
+                <div class="payerror">
+                    <div></div>
+                </div>
+                <div>
+                    <div class="payerror-title">
+                        การชำระเงินของคุณไม่สำเร็จ
+
+                    </div>
+                </div>
+                <div class="payerror-info">
+                    <div>
+                        <div class="title">เลขที่อ้างอิงการชำระเงิน : </div>
+                        <div>000001758354</div>
+                    </div>
+
+
+                    <div>
+                        <div class="title">ไม่สามารถทำรายการได้ เนื่องจาก :</div>
+                    </div>
+                    <div>
+                        <div>* ให้ข้อมูลไม่ถูกต้องเช่นหมายเลขบัตรเครดิต / วันหมดอายุ * </div>
+                    </div>
+                    <div>
+                        <div>* ไม่สามารถเชื่อมต่อกับธนาคารผู้ออกบัตรเครดิตได้* </div>
+                    </div>
+                    <div>
+                        <div>* บัตรเครดิตไม่ได้รับการอนุมัติ ให้ใช้งานผ่านอินเทอร์เน็ต * </div>
+                    </div>
+                    <div>
+                        <div>* บัตรเครดิตจะไม่ได้รับอนุมัติ ในบางช่วงเวลา* </div>
+                    </div>
+                    <div>
+                        <div class="title">โปรดปฏิบัติตามคำแนะนำ ต่อไปนี้: </div>
+                    </div>
+                    <div>
+                        <div>*
+                            ตรวจสอบกับธนาคารที่ออกบัตรเพื่อให้แน่ใจว่าบัตรเครดิตได้รับอนุญาตอย่างถูกต้องและสามารถนำมาใช้สำหรับการซื้อสินค้าผ่านทางอินเทอร์เน็ต
+                            * </div>
+                    </div>
+                    <div>
+                        <div>* กรุณาใช้บัตรเครดิตใบอื่น เพื่อทำรายการอนุมัติการชำระเงินของคุณ * </div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+
+                </div>
+                <input type="hidden" name="masterMerId" value="1">
+                <input type="hidden" name="orderRef" value="6600000155">
+                <input type="hidden" name="orderRef1" value="62025470">
+                <input type="hidden" name="orderRef2" value="">
+                <input type="hidden" name="orderRef3" value="">
+                <input type="hidden" name="orderRef4" value="">
+                <input type="hidden" name="orderRef5" value="">
+                <input type="hidden" name="orderRef6" value="">
+                <!-- 20210504 orderRef start -->
+                <input type="hidden" name="orderRef7" value="">
+                <input type="hidden" name="orderRef8" value="">
+                <input type="hidden" name="orderRef9" value="">
+                <input type="hidden" name="orderRef10" value="">
+                <input type="hidden" name="orderRef11" value="">
+                <input type="hidden" name="orderRef12" value="">
+                <!-- 20210504 orderRef end -->
+                <input type="hidden" name="merchantId" value="3522">
+                <input type="hidden" name="lang" value="T">
+                <input type="hidden" name="currCode" value="764">
+                <input type="hidden" name="amount" value="1.0">
+                <input type="hidden" name="remark" value="">
+                <input type="hidden" name="successUrl"
+                    value="https://trial.dga.or.th/e-payment/ktb/fastpay/success?Ref=6600000155">
+                <input type="hidden" name="failUrl"
+                    value="https://trial.dga.or.th/e-payment/ktb/fastpay/fail?Ref=6600000155">
+                <input type="hidden" name="cancelUrl"
+                    value="https://trial.dga.or.th/e-payment/ktb/fastpay/fail?Ref=6600000155">
+                <input type="hidden" name="payType" value="N">
+                <input type="hidden" name="print" value="null">
+                <!-- //20141125 Start Create New ISO for EDC   [QTH1305005(R4) {3.7}] -->
+
+                <input type="hidden" name="timeZone" value="GMT+7">
+                <input type="hidden" name="issueCountry" value="">
+                <input type="hidden" name="ipCountry" value=" ">
+                <input type="hidden" name="pcCountry" value="GBR">
+                <input type="hidden" name="pcLanguage" value="EN">
+                <input type="hidden" name="cardHolder" value="">
+                <input type="hidden" name="issueBankType" value="">
+                <input type="hidden" name="issueBankSelect" value="">
+                <input type="hidden" name="issueBankOthers" value="">
+                <input type="hidden" name="eMail" value="">
+                <input type="hidden" name="os" value="MacOSX">
+                <input type="hidden" name="browser" value="Chrome">
+
+                <input type="hidden" name="theme" value="F">
+
+                <!-- //20141125 End Create New ISO for EDC   [QTH1305005(R4) {3.7}] -->
+
+                <input type="hidden" name="theme" value="F">
+
+                <!-- 20190118 WashAccount Start -->
+                <input type="hidden" name="washAccount" value="">
+                <input type="hidden" name="washMerchant" value="">
+                <input type="hidden" name="washAmount" value="">
+                <!-- 20190118 WashAccount End -->
+
+
+
+                <!-- Member payment params -->
+                <!-- input type="hidden" name="mpService" value="" /> 
+		<--% if("T".equals(mpService)) {%> 
+		<--input type="hidden" name="mpLoginId" value="" /> 
+		<--input type="hidden" name="mpHaveCard" value="" /> 
+		<--input type="hidden" name="mpSaveCard" value="" /> 
+		<--input type="hidden" name="memberId" value="" /> 
+		<--input type="hidden" name="mpFirstName" value="" /> 
+		<--input type="hidden" name="mpLastName" value="" />
+		<--input type="hidden" name="mpToken" value="" /> 
+		<--input type="hidden" name="mpAccountId" value="" />
+		<--% } %-->
+                <!-- Edited by Nut 20190815 -->
+                <input type="hidden" name="mpService" value="F">
+
+                <!-- End Member payment params -->
+
+                <input type="hidden" name="pMethod" value="">
+
+                <!-- 20201110 start add Security key -->
+
+                <input type="hidden" name="securityKey"
+                    value="21954cb4973cb98f45cae75e5aa297a7e245bf6c793c7da1ab546f8c508a423df94cde786a3ee66cc23b783958be7968874406e871f02d3ce416474a052e3212">
+
+                <!-- 20201110 end add Security key -->
+                <!-- 20210504 PF Start -->
+
+                <!-- 20210504 PF End -->
+                <input type="hidden" name="redirect" value="-1">
+                <input type="hidden" name="sessionId" value="464222">
+
+                <div class="footer inner">
+
+                    <div class="btn-primary cancel"
+                        onclick="location.href='https://trial.dga.or.th/e-payment/ktb/fastpay/cancel?Ref=6600000155'">
+                        Continue</div>
+
+
+
+
+                    <!-- disabled retry -->
+                    <div class="btn-primary confirm">Retry</div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer outer">
+        <div class="copyright"><img alt="LOGO" src="https://uatktbfastpay.ktb.co.th/static/images/favicon.webp"> © 2018
+            Krungthai Bank. ALL RIGHT RESERVED</div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
