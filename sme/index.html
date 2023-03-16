@@ -41,186 +41,130 @@
         }
 
 
-        .driving-card {
-            visibility: visible;
-        }
-
-
-        .driving-card {
-            padding: 15px 15px 10px 10px;
-            width: 100%;
-            max-width: 450px;
-            background-color: white;
+        .sme-card {
+            width: 450px;
+            height: 283px;
+            background-color: transparent;
             border-radius: 15px;
-
             position: relative;
             left: 50%;
             transform: translate(-50%, -50%);
             top: 150px;
-        }
-
-        .driving-card .top-bar {
-            height: 55px;
-            background-color: #2D378E;
-            padding: 5px
-        }
-
-        .driving-card .top-bar .flag {
-            height: 44px;
-            width: 60px;
-            background: url("thai.png");
             background-repeat: no-repeat;
             background-size: contain;
-            float: left;
+            margin-bottom: 30px;
         }
 
-        .driving-card .top-bar .country {
-            font-size: 0.6em;
-            font-weight: normal;
-            color: white;
-            text-align: center;
-            float: left;
-            padding: 8px 8px 5px 5px;
+        .sme-card.green {
+            background-image: url("_media/01.png");
         }
 
-        .driving-card .top-bar .card-type {
-            font-size: 0.8em;
-            font-weight: bold;
-            color: white;
-
-            text-align: right;
-            float: right;
+        .sme-card.blue {
+            background-image: url("_media/02.png");
         }
 
-        .driving-card .round {
-            height: 55px;
-            width: 55px;
-            border-radius: 50px;
-            margin-top: 5px;
-            background-color: #D9D9D9;
-            float: left;
-        }
-
-        .driving-card .issue-bar {
-            width: calc(100% - 60px);
-            background-color: #7276B4;
-            margin-left: 60px;
-            padding: 5px;
-        }
-
-        .driving-card .detail-bar {
-            width: 100%;
-            background-color: #A3A1D0;
-            padding: 5px;
-        }
-
-
-        .driving-card .bottom-bar {
-            height: 34px;
-            background-color: #2D378E;
-            text-align: center;
-            padding: 5px;
-            color: white;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-
-
-        .column.is-4 {
-            color: white;
-            font-size: 0.7em;
-        }
-
-        .column.is-8 {
-            color: white;
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-        .remark {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            top: 400px;
-            width: 100%;
+        .sme-card.orange {
+            background-image: url("_media/03.png");
         }
 
         @media screen and (orientation:landscape) {
-            .remark {
-                display: none;
-            }
-
-
-            .driving-card {
+            .sme-card {
                 top: 150px;
             }
-
-            .remark {
-                top: 350px;
-            }
-
-        }
-
-        @media screen and (orientation:portrait) {
-            .remark {
-                display: block;
-            }
         }
 
 
+        .sme-card .citizenId {
+            color: white;
+            font-size: 1.3em;
+            font-weight: bold;
+            position: absolute;
+        }
 
+        .sme-card .register,
+        .sme-card .expiry {
+            color: white;
+            font-size: 0.8em;
+            font-weight: normal;
+            position: absolute;
 
-        @media screen and (max-width: 480px) {
-            .driving-card .top-bar .country {
-                display: none;
+        }
+
+        @media screen and (max-width: 400px)  {
+            .sme-card {
+                width: 320px;
+                height: 201px;
+                top: 100px;
+            }
+
+            .sme-card .citizenId {
+                top: 120px;
+                left: 10px;
+                font-size: 1em;
+            }
+
+            .sme-card .register {
+                top: 155px;
+                left: 70px;
+                font-size: 0.65em;
+            }
+
+            .sme-card .expiry {
+                top: 155px;
+                left: 220px;
+                font-size: 0.65em;
+                width: 200px;
             }
         }
 
 
-        @media screen and (max-width: 360px) {
-            .driving-card .top-bar .country {
-                display: none;
+        @media screen and (min-width: 400px) and (max-width: 480px)  {
+            .sme-card {
+                width: 380px;
+                height: 239px;
+                top: 110px;
             }
 
-            .column.is-4 {
-                color: white;
-                font-size: 0.6em;
+            .sme-card .citizenId {
+                top: 140px;
+                left: 15px;
+                font-size: 1.1em;
             }
 
-            .column.is-8 {
-                color: white;
-                font-size: 0.8em;
-                font-weight: bold;
+            .sme-card .register {
+                top: 190px;
+                left: 105px;
+                font-size: 0.7em;
             }
 
-            .driving-card .bottom-bar {
-                font-size: 0.8em;
+            .sme-card .expiry {
+                top: 190px;
+                left: 260px;
+                font-size: 0.7em;
+                width: 200px;
             }
         }
 
-        @media screen and (max-width: 333px) {
-            .driving-card .top-bar .country {
-                display: none;
+
+        @media screen and (min-width: 480px) {
+            .sme-card {
+                width: 450px;
+                height: 283px;
             }
 
-            .driving-card .top-bar .card-type {
-                font-size: 0.6em;
-                padding-top: 8px;
+            .sme-card .citizenId {
+                top: 170px;
+                left: 20px;
             }
 
-            .column.is-4 {
-                color: white;
-                font-size: 0.6em;
+            .sme-card .register {
+                top: 220px;
+                left: 130px;
             }
 
-            .column.is-8 {
-                color: white;
-                font-size: 0.8em;
-                font-weight: bold;
-            }
-
-            .driving-card .bottom-bar {
-                font-size: 0.8em;
+            .sme-card .expiry {
+                top: 220px;
+                left: 320px;
             }
         }
     </style>
@@ -233,80 +177,15 @@
 
 
 
-        <div class="driving-card ">
-            <div class="top-bar mb-1">
-                <div class="flag"></div>
-                <div class="country">ประเทศไทย <br> Kingdom Of Thailand</div>
-                <div class="card-type">ใบอนุญาตขับรถยนต์ส่วนบุคคล <br> Private Car Driving License</div>
-            </div>
-            <div class="round mr-1 mt-4"></div>
-            <div class="issue-bar mb-1">
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        ฉบับที่:
-                    </div>
-                    <div class="column is-8">
-                        12345678
-                    </div>
-                </div>
-
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        วันอนุญาต:
-                    </div>
-                    <div class="column is-8">
-                        1 ม.ค. 2560
-                    </div>
-                </div>
-
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        วันหมดอายุ:
-                    </div>
-                    <div class="column is-8">
-                        1 ม.ค. 2566
-                    </div>
-                </div>
+        <div class="sme-card green">
+            <div class="citizenId">3-1021-01657 67-1</div>
+            <div class="register">
+                <label>วันที่ลงทะเบียน:</label> 15/03/2023
             </div>
 
-            <div class="detail-bar mb-1">
-
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        ชื่อ:
-                    </div>
-                    <div class="column is-8">
-                        นาย ทดสอบ นามสกุลดี
-                    </div>
-                </div>
-
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        วันเกิด:
-                    </div>
-                    <div class="column is-8">
-                        23 มกราคม 2525
-                    </div>
-                </div>
-
-
-                <div class="columns is-gapless is-mobile mb-0">
-                    <div class="column is-4">
-                        เลขบัตรประชาชน:
-                    </div>
-                    <div class="column is-8">
-                        1 1014 01058 XX X
-                    </div>
-                </div>
-
-
-
+            <div class="expiry">
+                <label>วันที่หมดอายุ:</label> 2024
             </div>
-
-            <div class="bottom-bar">
-                นายทะเบียน กรุงเทพมหานคร
-            </div>
-
         </div>
 
         <div class="card mt-4">
@@ -326,7 +205,7 @@
 
                     <div class="field-content">
                         <label>เลขประจำตัวประชาชน:</label>
-                        <div>3-1021-01657 67-1</div>
+                        <div>3-1021-01657-67-1</div>
                     </div>
 
                     <div class="field-content">
@@ -541,11 +420,12 @@
                                 </div>
                             </div>
                             <div class="columns mb-0">
-                                <div class="column ">
-                                    <label class="button  is-fullwidth is-primary " for="modal-one">แก้ไข</label>
+                                <div class="column my-0 py-1">
+                                    <label class="button is-small is-fullwidth is-primary my-0 "
+                                        for="modal-one">แก้ไข</label>
                                 </div>
-                                <div class="column">
-                                    <a class="button  is-fullwidth	 is-danger ">ลบ</a>
+                                <div class="column my-0  py-1">
+                                    <a class="button is-small is-fullwidth	my-0 is-danger ">ลบ</a>
                                 </div>
                             </div>
 
