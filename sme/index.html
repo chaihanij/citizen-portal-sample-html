@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://czp.dga.or.th/cportal/sdk/css/v2/sun.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #2e75b5;
+        }
+
+        .button.is-success,
+        .button.is-success:hover,
+        .button.is-success:focus,
+        .button.is-success:active {
+            background-color: #2e75b5
+        }
+
+        .has-text-success {
+            color: #2e75b5;
+        }
+
+        .timeline-content span {
+            font-size: 0.9em;
+            color: #2e75b5;
+        }
+
+        .marker {
+            border: 2px solid #ffffff;
+            background: #2e75b5;
+        }
+
+        .squares .icon {
+            background: #843E61;
+            color: white;
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+
+<body class="section">
+    <div class="container">
+        <h3 class="title is-4 has-text-white">สวัสดีคุณทดสอบ นามสกุลดี</h3>
+        <h6 class="subtitle is-6 has-text-white	">ยินดีต้อนรับเข้าสู่ ระบบลงทะเบียนผู้ประกอบการ SME (SME ONE ID)</h6>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    ข้อมูลบุคคลผู้ขออนุญาต
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+
+            <div class="card-content">
+                <div class="content">
+                    <div class="field-content">
+                        <label>ชื่อ-สกุล:</label>
+                        <div>คุณทดสอบ นามสกุลดี</div>
+                    </div>
+
+                    <div class="field-content">
+                        <label>เลขประจำตัวประชาชน:</label>
+                        <div>3-1021-01657 67-1</div>
+                    </div>
+
+                    <div class="field-content">
+                        <label>อีเมล:</label>
+                        <div>test@test.com</div>
+                    </div>
+
+                    <div class="field-content">
+                        <label>เบอร์โทรศัพท์:</label>
+                        <div>090-000-0000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    ที่อยู่ที่สามารถติดต่อได้
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>เลขที่</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>หมู่ที่</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>ตรอก/ซอย</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>อาคาร</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>ห้องเลขที่</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>ชั้น</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>ถนน</span>
+                        </label>
+                    </div>
+                    
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <select>
+                                <option disabled selected>กรุณาระบุจังหวัด </option>
+                                <option>With options a</option>
+                                <option>With options b</option>
+                                <option>With options c</option>
+                            </select>
+                            <span>จังหวัด</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <select>
+                                <option disabled selected>กรุณาระบุอำเภอ </option>
+                                <option>With options a</option>
+                                <option>With options b</option>
+                                <option>With options c</option>
+                            </select>
+                            <span>อำเภอ</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <select>
+                                <option disabled selected>กรุณาระบุตำบล </option>
+                                <option>With options a</option>
+                                <option>With options b</option>
+                                <option>With options c</option>
+                            </select>
+                            <span>ตำบล</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>รหัสไปรษณีย์</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>โทรศัพท์</span>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label class="input-outlined ">
+                            <input placeholder=" " />
+                            <span>โทรสาร</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    ประเภทผู้ลงทะเบียน
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                เป็นผู้ประกอบการ SME
+                            </label> 
+                        </div>
+                        <div class="control">
+                           
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                เป็นผู้ที่สนใจจะประกอบธุรกิจ (Pre Startup)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    ข้อมูลสถานประกอบการ (ต้องมีอย่างน้อย 1 รายการ)
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="card mt-4">
+                        <header class="card-header mb-2">
+                            <div class="card-header-title">
+            
+                                <div class="squares mr-2">
+                                    <div class="icon">
+                                        <p>ค่าทำศพ</p>
+                                    </div>
+                                </div>
+            
+                                <div class="is-pulled-left">
+                                    <div class="title is-size-4"> สถานประกอบการ 122345</div>
+                                    <div class="subtitle is-size-5">ปีที่จัดตั้งกิจการ: 2523</div>
+                                </div>
+                            </div>
+                        </header>
+            
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="field-content">
+                                    <label>ภาคธุรกิจ:</label>
+                                    <div>ภาคธุรกิจการเกษตร/การเพาะปลูกและการเลี้ยงสัตว์ การล่าสัตว์และกิจกรรมบริการที่เกี่ยวข้อง/การปลูกข้าวโพดที่ใช้เมล็ดแก่( Tsic : 01111)</div>
+                                </div>
+            
+                                <div class="field-content">
+                                    <label>ที่อยู่สถานประกอบการ:</label>
+                                    <div>บางกอกไทย ชั้น 5 เลขที่ 12 หมู่บ้าน บ้านฉัน หมู่ 1 ซ.มิตรอารย์ ถนนรางน้ำ ต.ดินอุดม อ.ลำทับ จ.กระบี่ 81120</div>
+                                </div>
+
+                                <div class="field-content">
+                                    <label>โทรศัพท์:</label>
+                                    <div>026126000</div>
+                                </div>
+                                <div class="field-content">
+                                    <label>โทรสาร:</label>
+                                    <div>026126666</div>
+                                </div>
+                                <div class="field-content">
+                                    <label>อีเมล:</label>
+                                    <div>test.payment@dga.or.th</div>
+                                </div>
+                            </div>
+                            <div class="columns mb-0">
+                                <div class="column ">
+                                    <label class="button  is-fullwidth is-primary " for="modal-one">แก้ไข</label>
+                                </div>
+                                <div class="column">
+                                    <a class="button  is-fullwidth	 is-danger " >ลบ</a>
+                                </div>
+                              </div>
+                            <div>
+                               
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <label class="button  is-fullwidth is-info mt-4" for="modal-one">เพิ่มข้อมูล</label>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    คุณสมบัติการลงทะเบียน SME เพื่อขอรับบริการภาครัฐ
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้รวมไม่เกิน 1.8 ล้านบาท
+                            </label> 
+                        </div>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้ระหว่าง 1.8-50 ล้านบาท
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้ระหว่าง 50-100 ล้านบาท
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้ระหว่าง 100-300 ล้านบาท
+                            </label>
+                        </div>
+
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้ระหว่าง 300-500 ล้านบาท
+                            </label>
+                        </div>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="question">
+                                รายได้รวมมากกว่า 500 ล้านบาท
+                            </label>
+                        </div>
+
+
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <header class="card-header">
+                <p class="card-header-title">
+                    รับรองการลงทะเบียน SME เพื่อขอรับบริการภาครัฐ
+                </p>
+            </header>
+            <hr class="ml-5 mr-5 mt-2 mb-2">
+            <div class="card-content">
+                <div class="content">
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                ท่านได้รับคำแนะนำมาจาก OSS (ใช่/ไม่ใช่)
+                            </label>
+                        </div>
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                ข้าพเจ้าขอรับรองว่าข้อมูลต่างๆ ที่ให้ไว้นี้เป็นความจริงทุกประการ และได้รับเอกสารหลักเกณฑ์และเงื่อนไขที่เกี่ยวข้อง กับการรับรองไว้เรียบร้อยแล้ว <br>
+                                <small> &nbsp;&nbsp;&nbsp;  หมายเหตุ :จะมีการตรวจสอบคุณสมบัติของท่านอีกครั้งตามเงื่อนไขของผู้ประกอบการ SME รายละเอียดเพิ่มเติม <a href="#">คลิก</a></small>
+                            </label>
+                        </div>
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                ข้าพเจ้ายอมรับ <a href="#">เงื่อนไขการให้บริการการดำเนินการ</a> 
+                            </label>
+                        </div>
+                    </div>
+                 
+                    <a class="button mt-2 is-fullwidth is-success">บันทึก</a>
+                    <a class="button mt-2 is-fullwidth ">ย้อนกลับ</a>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+        <input class="modal-open" id="modal-one" type="checkbox" hidden>
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card p-4">
+            <header class="modal-card-head">
+              <p class="modal-card-title">ข้อมูลธุรกิจที่ผู้สมัครดำเนินกิจการ</p>
+              <label class="delete" for="modal-one"></label>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ชื่อกิจการ</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ปีที่จัดตั้งกิจการ (พ.ศ.)</span>
+                    </label>
+                </div>
+
+                <h3 class="title is-5 mt-4"> ประเภทธุรกิจ</h3>
+                <small>กรุณาระบุคำค้นหรือรหัสธุรกิจเพื่อเลือกประเภทธุรกิจ (ศึกษารายละเอียดเพิ่มเติม <a>คลิก</a>)</small>
+                
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ระบุคำค้นหรือรหัสธุรกิต</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <select>
+                            <option disabled selected>กรุณาเลือกรายการประเภทธุรกิจที่เลือก (TSIC) </option>
+                            <option>With options a</option>
+                            <option>With options b</option>
+                            <option>With options c</option>
+                        </select>
+                        <span>รายการประเภทธุรกิจที่เลือก (TSIC)</span>
+                    </label>
+                </div>
+
+                <h3 class="title is-5 mt-4"> ที่อยู่สถานประกอบการ
+                </h3>
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        ใช้ที่อยู่เดียวกับที่อยู่ที่สามารถติดต่อได้ในปัจจุบัน
+                    </label>
+                </div>
+                
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>เลขที่</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>หมู่ที่</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ตรอก/ซอย</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>อาคาร</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ห้องเลขที่</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ชั้น</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>ถนน</span>
+                    </label>
+                </div>
+                
+                <div class="field">
+                    <label class="input-outlined ">
+                        <select>
+                            <option disabled selected>กรุณาระบุจังหวัด </option>
+                            <option>With options a</option>
+                            <option>With options b</option>
+                            <option>With options c</option>
+                        </select>
+                        <span>จังหวัด</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <select>
+                            <option disabled selected>กรุณาระบุอำเภอ </option>
+                            <option>With options a</option>
+                            <option>With options b</option>
+                            <option>With options c</option>
+                        </select>
+                        <span>อำเภอ</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <select>
+                            <option disabled selected>กรุณาระบุตำบล </option>
+                            <option>With options a</option>
+                            <option>With options b</option>
+                            <option>With options c</option>
+                        </select>
+                        <span>ตำบล</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>รหัสไปรษณีย์</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>โทรศัพท์</span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>อีเมล</span>
+                    </label>
+                </div>
+
+
+                <div class="field">
+                    <label class="input-outlined ">
+                        <input placeholder=" " />
+                        <span>โทรสาร</span>
+                    </label>
+                </div>
+
+            </section>
+            <footer class="modal-card-foot has-text-right">
+              <label class="button" for="modal-one">ยกเลิก</label>
+              <button class="button is-success">บันทึก</button>
+      
+            </footer>
+          </div>
+        </div>
+  
+
+
+</body>
+
+</html>
