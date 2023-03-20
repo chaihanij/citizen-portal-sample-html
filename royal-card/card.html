@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://czp.dga.or.th/cportal/sdk/css/v2/sun.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+
+
+    <title>Document</title>
+    <style>
+        html {
+            background-color: #25201B;
+        }
+
+        .virtual-card {
+            width: 100%;
+            max-width: 450px;
+            background-color: white;
+            border-radius: 15px;
+
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 200px;
+            padding-bottom: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        .virtual-card .top-bar {
+            height: 70px;
+            background-color: #252E1B;
+            border: none;
+            border-radius: 15px 15px 0 0;
+            padding: 15px 10px 10px 10px;
+            background-image: url("_media/header-bg.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            margin-top: -10px;
+        }
+
+        .virtual-card .top-bar .flag {
+            height: 40px;
+            width: 40px;
+            background: url("_media/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: left;
+        }
+
+        .virtual-card .top-bar .card-type {
+            font-size: 0.9rem;
+            font-weight: bold;
+            line-height: 1.2rem;
+            padding: 5px 10px 10px 10px;
+            text-align: left;
+            float: left;
+        }
+
+        .virtual-card .top-bar .card-type .th {
+            color: #DCBE50;
+        }
+
+        .virtual-card .top-bar .card-type .en {
+            font-size: 0.9em;
+            color: white;
+        }
+
+        .main-content {
+            background-image: url("_media/bg.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .nameth,
+        .nameen {
+            font-size: 1.2rem;
+            font-weight: bold;
+            line-height: 0px;
+        }
+
+        .field-label {
+            margin-right: 1rem !important;
+        }
+
+        .field-label.long {
+            margin-right: 0.5rem !important;
+        }
+
+        .field-label .label {
+            width: 40px;
+            font-size: 0.9rem;
+            line-height: 1.0rem;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .field-label.long .label {
+            width: 100px;
+        }
+
+
+        .field:not(:last-child) {
+            margin-bottom: 0px;
+        }
+
+        .field {
+            line-height: 1.3rem;
+        }
+
+        .field .control {
+            font-size: 1rem;
+            line-height: 1.0rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        @media screen and (max-width: 768px) {
+            .field.is-horizontal {
+                display: flex;
+            }
+
+            .field-label {
+                margin-bottom: 0rem;
+            }
+        }
+
+        @media screen and (max-width: 460px) {
+            .virtual-card {
+                width: 400px;
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+            .virtual-card {
+                width: 320px;
+            }
+
+            .virtual-card .top-bar .card-type {
+                font-size: 0.8rem;
+                line-height: 1.0rem;
+            }
+
+            .virtual-card .top-bar .card-type .en {
+                font-size: 0.8em;
+            }
+
+            .profile-img {
+                width: 80px
+            }
+
+            .nameth,
+            .nameen {
+                font-size: 1.0rem;
+            }
+
+            .field-label .label {
+                width: 30px;
+                font-size: 0.76rem;
+                line-height: 0.9rem;
+            }
+
+            .field-label.long .label {
+                width: 90px;
+            }
+
+
+            .field-label {
+                margin-right: 0.8rem !important;
+            }
+
+            .field-label.long {
+                margin-right: 0rem !important;
+            }
+            .main-content{
+                width: 220px;
+            }
+
+            .field .control {
+            font-size: 0.8rem;
+            line-height: 0.5rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+
+            <div class="virtual-card ">
+                <div class="top-bar mb-1">
+                    <div class="flag"></div>
+                    <div class="card-type">
+                        <span class="th">หลักฐานแสดงตน กำลังพลกองทัพบก</span><br>
+                        <span class="en">PROOF OF IDENTITY FOR ARMY PERSONNEL</span>
+                    </div>
+                </div>
+                <div class="pl-2 pt-1 is-pulled-left">
+                    <img src="https://placehold.co/120x176" class="profile-img">
+                </div>
+                <div class="px-2 pt-1 is-pulled-left main-content">
+                    <span class="nameth">ทดสอบ นามสกุลดี</span> <br>
+                    <span class="nameen">Todsorb Namsakuldee</span> <br>
+
+
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label class="label">เหล่า</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    สบ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label class="label">ตำแหน่ง</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    เสมียน กพ.ทบ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label class="label">สังกัด</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    กพ.ทบ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label long">
+                            <label class="label">เลขบัตรประชาชน</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    3-6607-XXXXX-XX-X
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label long">
+                            <label class="label">หมายเลขทหาร</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    15437XXXXX
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label">
+                            <label class="label">วันเกิด</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    1 มกราคม 2512
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
