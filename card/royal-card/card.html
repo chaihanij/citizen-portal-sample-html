@@ -124,6 +124,28 @@
             vertical-align: middle;
         }
 
+
+
+        .virtual-card>.front:before {
+            transition: all 1s;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-image: linear-gradient(135deg, rgba(238, 238, 238, 0) 0%, rgba(255, 255, 255, 0) 36%, rgba(255, 255, 255, 0.4) 36%, rgba(255, 255, 255, 0.4) 68%, rgba(247, 247, 247, 0) 69%, rgba(238, 238, 238, 0) 70%);
+            background-repeat: no-repeat;
+            background-position: -410px 0;
+            pointer-events: none;
+            border-radius: 15px;
+            z-index: 20;
+        }
+
+        .virtual-card.flip-it>.front:before {
+            background-position: 324px 0;
+        }
+
         @media screen and (max-width: 768px) {
             .field.is-horizontal {
                 display: flex;
@@ -182,21 +204,21 @@
             .field-label.long {
                 margin-right: 0rem !important;
             }
-            .main-content{
+
+            .main-content {
                 width: 280px;
             }
 
             .field .control {
-            font-size: 0.9rem;
-            line-height: 0.4rem;
-        }
+                font-size: 0.9rem;
+                line-height: 0.4rem;
+            }
         }
 
         @media screen and (max-width: 380px) {
             .virtual-card {
                 width: 320px;
-                top:250px
-
+                top: 250px
             }
 
             .virtual-card .top-bar .card-type {
@@ -235,14 +257,15 @@
             .field-label.long {
                 margin-right: 0rem !important;
             }
-            .main-content{
+
+            .main-content {
                 width: 220px;
             }
 
             .field .control {
-            font-size: 0.8rem;
-            line-height: 0.5rem;
-        }
+                font-size: 0.8rem;
+                line-height: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -253,104 +276,111 @@
 
             <h3 class="title is-4 has-text-white">สวัสดีคุณทดสอบ นามสกุลดี</h3>
             <h6 class="subtitle is-6 has-text-white	">ยินดีต้อนรับเข้าสู่ ระบบหลักฐานแสดงตนกำลังพลกองทัพบก</h6>
-            <div class="virtual-card ">
-                <div class="top-bar mb-1">
-                    <div class="flag"></div>
-                    <div class="card-type">
-                        <span class="th">หลักฐานแสดงตน กำลังพลกองทัพบก</span><br>
-                        <span class="en">PROOF OF IDENTITY FOR ARMY PERSONNEL</span>
+            <div id="card" class="virtual-card ">
+                <div class="front">
+                    <div class="top-bar mb-1">
+                        <div class="flag"></div>
+                        <div class="card-type">
+                            <span class="th">หลักฐานแสดงตน กำลังพลกองทัพบก</span><br>
+                            <span class="en">PROOF OF IDENTITY FOR ARMY PERSONNEL</span>
+                        </div>
+                    </div>
+                    <div class="pl-2 pt-1 is-pulled-left">
+                        <img src="https://placehold.co/120x176" class="profile-img">
+                    </div>
+                    <div class="px-2 pt-1 is-pulled-left main-content">
+                        <span class="nameth">ทดสอบ นามสกุลดี</span> <br>
+                        <span class="nameen">Todsorb Namsakuldee</span> <br>
+
+
+                        <div class="field is-horizontal">
+                            <div class="field-label">
+                                <label class="label">เหล่า</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        สบ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label">
+                                <label class="label">ตำแหน่ง</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        เสมียน กพ.ทบ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-horizontal">
+                            <div class="field-label">
+                                <label class="label">สังกัด</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        กพ.ทบ.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label long">
+                                <label class="label">เลขบัตรประชาชน</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        3-6607-XXXXX-XX-X
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label long">
+                                <label class="label">หมายเลขทหาร</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        15437XXXXX
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label">
+                                <label class="label">วันเกิด</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        1 มกราคม 2512
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="pl-2 pt-1 is-pulled-left">
-                    <img src="https://placehold.co/120x176" class="profile-img">
-                </div>
-                <div class="px-2 pt-1 is-pulled-left main-content">
-                    <span class="nameth">ทดสอบ นามสกุลดี</span> <br>
-                    <span class="nameen">Todsorb Namsakuldee</span> <br>
-
-
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <label class="label">เหล่า</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    สบ.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <label class="label">ตำแหน่ง</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    เสมียน กพ.ทบ.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <label class="label">สังกัด</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    กพ.ทบ.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field is-horizontal">
-                        <div class="field-label long">
-                            <label class="label">เลขบัตรประชาชน</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    3-6607-XXXXX-XX-X
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field is-horizontal">
-                        <div class="field-label long">
-                            <label class="label">หมายเลขทหาร</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    15437XXXXX
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field is-horizontal">
-                        <div class="field-label">
-                            <label class="label">วันเกิด</label>
-                        </div>
-                        <div class="field-body">
-                            <div class="field">
-                                <div class="control">
-                                    1 มกราคม 2512
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
         </div>
     </div>
 
 
 
+
+    <script>
+        let element = document.getElementById("card");
+        element.classList.add("flip-it");
+
+    </script>
 
 </body>
 
