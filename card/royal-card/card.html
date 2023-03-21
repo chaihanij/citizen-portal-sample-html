@@ -27,8 +27,9 @@
 
             position: absolute;
             left: 50%;
+            right: 50%;
             transform: translate(-50%, -50%);
-            top: 200px;
+            top: 220px;
             padding-bottom: 5px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         }
@@ -140,9 +141,62 @@
         }
 
 
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 410px) {
+            .virtual-card {
+                width: 380px;
+            }
+
+            .virtual-card .top-bar .card-type {
+                font-size: 0.9rem;
+                line-height: 1.0rem;
+            }
+
+            .virtual-card .top-bar .card-type .en {
+                font-size: 0.9em;
+            }
+
+            .profile-img {
+                width: 90px
+            }
+
+            .nameth,
+            .nameen {
+                font-size: 1.0rem;
+            }
+
+            .field-label .label {
+                width: 35px;
+                font-size: 0.8rem;
+                line-height: 0.8rem;
+            }
+
+            .field-label.long .label {
+                width: 90px;
+            }
+
+
+            .field-label {
+                margin-right: 0.9rem !important;
+            }
+
+            .field-label.long {
+                margin-right: 0rem !important;
+            }
+            .main-content{
+                width: 280px;
+            }
+
+            .field .control {
+            font-size: 0.9rem;
+            line-height: 0.4rem;
+        }
+        }
+
+        @media screen and (max-width: 380px) {
             .virtual-card {
                 width: 320px;
+                top:250px
+
             }
 
             .virtual-card .top-bar .card-type {
@@ -197,6 +251,8 @@
     <div class="section">
         <div class="container">
 
+            <h3 class="title is-4 has-text-white">สวัสดีคุณทดสอบ นามสกุลดี</h3>
+            <h6 class="subtitle is-6 has-text-white	">ยินดีต้อนรับเข้าสู่ ระบบหลักฐานแสดงตนกำลังพลกองทัพบก</h6>
             <div class="virtual-card ">
                 <div class="top-bar mb-1">
                     <div class="flag"></div>
