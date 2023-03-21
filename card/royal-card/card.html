@@ -19,6 +19,10 @@
             background-color: #25201B;
         }
 
+        body{
+    height: 100vh;
+}
+
         .virtual-card {
             width: 100%;
             max-width: 450px;
@@ -31,7 +35,7 @@
             transform: translate(-50%, -50%);
             top: 220px;
             padding-bottom: 5px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
         }
 
         .virtual-card .top-bar {
@@ -383,8 +387,11 @@
 
 
     <script>
-        let element = document.getElementById("card");
-        element.classList.add("flip-it");
+        let card = document.getElementById("card");
+        card.classList.add("flip-it");
+
+
+
 
     </script>
 
