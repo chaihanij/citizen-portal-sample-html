@@ -19,9 +19,9 @@
             background-color: #25201B;
         }
 
-        body{
-    height: 100vh;
-}
+        body {
+            height: 100vh;
+        }
 
         .virtual-card {
             width: 100%;
@@ -142,7 +142,7 @@
 
 
 
-            
+
             background-repeat: no-repeat;
             background-position: -410px 0;
             pointer-events: none;
@@ -154,6 +154,13 @@
 
         .virtual-card.flip-it>.front:before {
             background-position: 420px 0;
+        }
+
+        .profile-img img {
+            object-fit: cover;
+            object-position: 50% 0;
+            width: 120px;
+            height: 176px;
         }
 
         @media screen and (max-width: 768px) {
@@ -188,8 +195,11 @@
             }
 
             .profile-img {
-                width: 90px
+                width: 90px;
+                height: 132px;
             }
+
+
 
             .nameth,
             .nameen {
@@ -241,7 +251,8 @@
             }
 
             .profile-img {
-                width: 80px
+                width: 80px;
+                height: 117px;
             }
 
             .nameth,
@@ -296,7 +307,10 @@
                         </div>
                     </div>
                     <div class="pl-2 pt-1 is-pulled-left">
-                        <img src="https://placehold.co/120x176" class="profile-img">
+                        <div class="profile-img">
+                            <img src="https://media.licdn.com/dms/image/C4E03AQE85RzP6qXgOw/profile-displayphoto-shrink_800_800/0/1635136395922?e=2147483647&v=beta&t=YPjm2vkcWXcT9XZiRy2xGKIKk55N6usXdFcEz1BbkXM">
+                        </div>
+
                     </div>
                     <div class="px-2 pt-1 is-pulled-left main-content">
                         <span class="nameth">ทดสอบ นามสกุลดี</span> <br>
@@ -389,11 +403,11 @@
     <script>
         setTimeout(() => {
             let card = document.getElementById("card");
-        card.classList.add("flip-it");
-}, 100);
+            card.classList.add("flip-it");
+        }, 100);
 
 
-       
+
 
 
 
