@@ -32,10 +32,17 @@
         }
 
         .virtual-card {
-            perspective: 1000px;
             width: 100%;
             max-width: 450px;
-            position: relative;
+            border-radius: 15px;
+
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            top: 100px;
+            padding-bottom: 5px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
         }
 
       
@@ -360,6 +367,14 @@
                 line-height: 0.5rem;
             }
         }
+
+        .remark {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 440px;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -479,6 +494,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="remark has-text-centered has-text-white">
+        กดที่บัตร เพื่อใช้งานบัตร
     </div>
 <!-- 
     <nav class="navbar  is-fixed-bottom">
