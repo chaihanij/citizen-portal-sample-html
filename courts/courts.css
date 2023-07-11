@@ -1,0 +1,239 @@
+html {
+    background-color: #D2D9E3;
+}
+
+.button.is-success,
+.button.is-success:hover,
+.button.is-success:focus,
+.button.is-success:active {
+    background-color: #06226B
+}
+
+.button.is-success.is-outlined,
+.button.is-success.is-outlined:hover,
+.button.is-success.is-outlined:focus,
+.button.is-success.is-outlined:active {
+    border-color: #06226B;
+    border:2px solid;
+    color: #06226B;
+    background-color: #fff
+}
+
+
+
+.button.is-info,
+.button.is-info:hover,
+.button.is-info:focus,
+.button.is-info:active {
+    background-color: #FE9900
+}
+
+
+
+.has-text-success {
+    color: #06226B;
+}
+
+.timeline-content span {
+    font-size: 0.9em;
+    color: #06226B;
+}
+
+.marker {
+    border: 2px solid #ffffff;
+    background: #06226B;
+}
+
+
+
+.welcome-box{
+    background-color: #06226B;
+    padding-bottom:40px
+}
+
+.board-layer{
+    padding: 0px 20px 20px 20px;
+    margin: -40px 0px;
+}
+
+.board-layer-nm{
+    padding: 0px 20px 20px 20px;
+}
+
+.board-layer.search{
+    margin: -20px 0px;
+}
+
+.navbar.is-fixed-bottom{
+    box-shadow: 10px 10px 4px 4px rgba(50, 50, 71, 0.08), 10px 10px 4px 8px rgba(50, 50, 71, 0.06);
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+}
+
+.title{
+    color: #06226B;
+}
+
+.button.is-round{
+    border-radius: 40px;
+    min-width: 100px;
+}
+
+.search-box{
+    height: 70px;
+}
+
+.subtitle.is-6{
+    font-size: 1rem;
+}
+
+.section{
+padding: 2rem 1rem;
+}
+
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#FE9900;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float .icon{
+    display: grid;
+    width:60px;
+	height:60px;
+    cursor: pointer;
+}
+
+.float .icon .cart{
+    width: 15px;
+    height:15px;
+    background-color: #E21B1B;
+    position: absolute;
+    border-radius: 10px;
+    right:10px;
+    bottom: 10px;
+
+}
+
+
+.steps {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+.steps .step:first-child {
+    margin-left: auto;
+}
+.steps .step:last-child {
+    margin-right: auto;
+}
+.step:first-of-type .step-circle::before {
+    display: none;
+}
+.step:last-of-type .step-content {
+    padding-right: 0;
+}
+.step-content {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    min-width: 5rem;
+    max-width: 5rem;
+    padding-top: 0.5rem;
+    padding-right: 1.15rem;
+}
+.step-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #adb5bd;
+    border: 2px solid #adb5bd;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.step-circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    width: calc(5rem + 1rem - 1.5rem);
+    height: 2px;
+    transform: translate(-100%, -50%);
+    color: #adb5bd;
+    background-color: currentColor;
+}
+.step-text {
+    color: #adb5bd;
+    word-break: break-all;
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+}
+.step-active .step-circle {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    z-index: 9999 !important;
+}
+.step-active .step-circle::before {
+    color: #007bff;
+}
+.step-active .step-text {
+    color: #007bff;
+}
+.step-error .step-circle {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    z-index: 9999 !important;
+}
+.step-error .step-circle::before {
+    color: #dc3545;
+}
+.step-error .step-text {
+    color: #dc3545;
+}
+.step-success .step-circle {
+    color: #28a745;
+    background-color: #fff;
+    border-color: #28a745;
+    z-index: 9999 !important;
+}
+.step-success .step-circle::before {
+    color: #28a745;
+}
+.step-success .step-text {
+    color: #28a745;
+}
+
+.card.status{
+    padding:0px
+}
+.card.status .subtitle{
+    font-size:1.2rem
+}
+.card.pending{
+    border-left: 15px solid #EA9816;
+}
+
+.card.pending .label-status{
+    color:#EA9816
+}
