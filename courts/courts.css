@@ -228,12 +228,68 @@ padding: 2rem 1rem;
     padding:0px
 }
 .card.status .subtitle{
-    font-size:1.2rem
+    font-size:1.1rem
 }
-.card.pending{
+.card.wait-for-review{
     border-left: 15px solid #EA9816;
 }
 
-.card.pending .label-status{
+.card.wait-for-review .label-status{
     color:#EA9816
+}
+
+.card.wait-for-payment{
+    border-left: 15px solid #EA9816;
+}
+
+.card.wait-for-payment .label-status{
+    color:#EA9816
+}
+
+.card.wait-for-receipt{
+    border-left: 15px solid #60B7FF;
+}
+
+.card.wait-for-receipt .label-status{
+    color:#60B7FF
+}
+
+.card.user-canceled{
+    border-left: 15px solid #E21B1B;
+}
+
+.card.user-canceled .label-status{
+    color:#E21B1B
+}
+
+.card.officer-canceled{
+    border-left: 15px solid #E21B1B;
+}
+
+.card.officer-canceled .label-status{
+    color:#E21B1B
+}
+
+.card.processing{
+    border-left: 15px solid #2196F3;
+}
+
+.card.processing .label-status{
+    color:#2196F3
+}
+
+.card.contact{
+    border-left: 15px solid #E21B1B;
+}
+
+.card.contact .label-status{
+    color:#E21B1B
+}
+
+.card.succeed{
+    border-left: 15px solid #4BAE4F;
+}
+
+.card.succeed .label-status{
+    color:#4BAE4F
 }
