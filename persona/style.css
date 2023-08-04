@@ -1,0 +1,157 @@
+html {
+    background-color: #0A6451;
+}
+
+.button.is-success,
+.button.is-success:hover,
+.button.is-success:focus,
+.button.is-success:active {
+    background-color: #0A6451
+}
+
+.button.is-success.is-outlined,
+.button.is-success.is-outlined:hover,
+.button.is-success.is-outlined:focus,
+.button.is-success.is-outlined:active {
+    border-color: #0A6451;
+    border:2px solid;
+    color: #0A6451;
+    background-color: #fff
+}
+
+
+
+.button.is-info,
+.button.is-info:hover,
+.button.is-info:focus,
+.button.is-info:active {
+    background-color: #FE9900
+}
+
+
+
+.has-text-success {
+    color: #0A6451;
+}
+
+.timeline-content span {
+    font-size: 0.9em;
+    color: #0A6451;
+}
+
+.marker {
+    border: 2px solid #ffffff;
+    background: #0A6451;
+}
+
+
+.board-layer{
+    padding: 0px 20px 20px 20px;
+    margin: -40px 0px;
+}
+
+.board-layer-nm{
+    padding: 0px 20px 20px 20px;
+}
+
+.board-layer.search{
+    margin: -20px 0px;
+}
+
+.navbar.is-fixed-bottom{
+    box-shadow: 10px 10px 4px 4px rgba(50, 50, 71, 0.08), 10px 10px 4px 8px rgba(50, 50, 71, 0.06);
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+}
+
+.title{
+    color: #0A6451;
+}
+
+.button.is-round{
+    border-radius: 40px;
+    min-width: 100px;
+}
+
+.search-box{
+    height: 70px;
+}
+
+.subtitle.is-6{
+    font-size: 1rem;
+}
+
+.section{
+padding: 2rem 1rem;
+}
+
+
+
+.float-download{
+	position:fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius:50px;
+}
+
+
+.button.is-black,
+ .button.is-black:hover,
+.button.is-black:focus,
+ .button.is-black:active {
+    background-color: #000000;
+    border: none;
+}
+
+
+.button.is-orange,
+ .button.is-orange:hover,
+.button.is-orange:focus,
+ .button.is-orange:active {
+    color: white;
+    background-color: #EE7321;
+    border: none;
+}
+
+
+.tag:not(body){
+    border: 2px solid #9B9B9B;
+    background-color: white;
+}
+
+.tag:not(body).active{
+    border: 2px solid #0A6451;
+    background-color: white;
+}
+.gender.active{
+    filter: invert(12%) sepia(90%) saturate(4898%) hue-rotate(167deg) brightness(88%) contrast(92%);
+}
+
+.image-cropped-calc {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-thumbnail{
+    border-radius: 20px;
+    width:auto; height:200px; background-position:center; background-size:cover; background-repeat: no-repeat;
+}
+
+audio{
+    width: 100%;
+}
+
+.image-fullscreen{
+    width: 100%;
+}
+
+.card-content .content{
+    text-align: justify;
+}
+
